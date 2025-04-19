@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website - FAQ</title>
+    <link rel="stylesheet" href="./style/faq.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1><a href="./index.html">Gaming Galaxy</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about_us.html">About Us</a></li>
+                <li><a href="./consoles.html">Consoles</a></li>
+                <li><a href="./game.html">Games</a></li>
+                <li><a href="./up_coming_game.html">Upcoming Games</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./order.html">Order</a></li>
+            </ul>
+        </nav>
+        <div>
+            <form action="/search" method="get" class="search-form">
+                <input type="text" id="search" name="query" placeholder="Search..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <section class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q1" class="faq-toggle">
+            <label for="q1" class="faq-question">What is this website about?</label>
+            <div class="faq-answer">
+                <p>This website provides information about games, upcoming releases, and more.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q3" class="faq-toggle">
+            <label for="q3" class="faq-question">Can I suggest a new game to add?</label>
+            <div class="faq-answer">
+                <p>Yes, you can suggest games through our contact form or forum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-container">
+        <h2>Contact Form Section</h2>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" placeholder="Your Message" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Gaming World | All Rights Reserved</p>
+    </footer>
+    </body>
+    </html>

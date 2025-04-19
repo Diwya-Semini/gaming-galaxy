@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./style/checkout.css">
+</head>
+<body>
+    <h1>Checkout Page</h1>
+    <p id="total">Total: <span id="orderTotal">LKR 0</span></p>
+
+    <form>
+        <input type="text" id="name" placeholder="Full Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="text" id="address" placeholder="Delivery Address" required><br>
+        <select id="payment" required>
+            <option value="" disabled selected>Select Payment Method</option>
+            <option value="card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+        </select><br><br>
+        <button type="button" id="paybtn">Pay</button>
+        <button type="button" id="back">Back</button>
+    </form>
+
+    <p id="confirmationMessage" class="hidden"></p>
+
+    <script src="./script/checkout.js"></script>
+</body>
+</html>

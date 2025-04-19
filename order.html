@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website - Order Page</title>
+    <link rel="stylesheet" href="./style/order.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="./index.html">Gaming Galaxy</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about_us.html">About Us</a></li>
+                <li><a href="./consoles.html">Consoles</a></li>
+                <li><a href="./game.html">Games</a></li>
+                <li><a href="./up_coming_game.html">Upcoming Games</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-section">
+            <h2>Product Section</h2>
+            <select id="productSelect">
+                <option disabled selected>Select The Product...</option>
+                <option disabled>Processors</option>
+                <option data-price="180000">Intel Core i9-13900K – LKR 180,000</option>
+                <option data-price="140000">Intel Core i7-13700K – LKR 140,000</option>
+                <option data-price="165000">AMD Ryzen 9 7950X – LKR 165,000</option>
+                <option data-price="125000">AMD Ryzen 7 7700X – LKR 125,000</option>
+                <option data-price="95000">Intel Core i5-13600K – LKR 95,000</option>
+                <option data-price="85000">AMD Ryzen 5 7600X – LKR 85,000</option>
+              
+                <option disabled>Graphic Cards</option>
+                <option data-price="750000">NVIDIA GeForce RTX 4090 – LKR 750,000</option>
+                <option data-price="520000">NVIDIA GeForce RTX 4080 – LKR 520,000</option>
+                <option data-price="430000">AMD Radeon RX 7900 XTX – LKR 430,000</option>
+                <option data-price="290000">AMD Radeon RX 7800 XT – LKR 290,000</option>
+                <option data-price="280000">NVIDIA GeForce RTX 4070 Ti – LKR 280,000</option>
+                <option data-price="120000">NVIDIA GeForce RTX 4060 – LKR 120,000</option>
+              
+                <option disabled>Motherboards</option>
+                <option data-price="110000">ASUS ROG Strix Z790-E Gaming WiFi (Intel) – LKR 110,000</option>
+                <option data-price="85000">MSI MAG B650 Tomahawk WiFi (AMD) – LKR 85,000</option>
+                <option data-price="120000">Gigabyte AORUS Master X670E (AMD) – LKR 120,000</option>
+                <option data-price="65000">ASRock B760 Pro RS (Intel) – LKR 65,000</option>
+                <option data-price="50000">ASUS Prime B550M-A WiFi (AMD) – LKR 50,000</option>
+                <option data-price="145000">MSI MEG Z690 ACE (Intel) – LKR 145,000</option>
+              
+                <option disabled>Memory</option>
+                <option data-price="45000">Corsair Vengeance RGB 32GB DDR5-6000 – LKR 45,000</option>
+                <option data-price="50000">G.SKILL Trident Z5 32GB DDR5-6400 – LKR 50,000</option>
+                <option data-price="25000">Kingston Fury Beast 16GB DDR4-3600 – LKR 25,000</option>
+                <option data-price="22000">Crucial Ballistix 16GB DDR4-3200 – LKR 22,000</option>
+              
+                <option disabled>Storage Devices</option>
+                <option data-price="80000">Samsung 990 PRO 2TB NVMe SSD – LKR 80,000</option>
+                <option data-price="45000">WD Black SN850X 1TB NVMe SSD – LKR 45,000</option>
+                <option data-price="75000">Crucial P5 Plus 2TB NVMe SSD – LKR 75,000</option>
+                <option data-price="50000">Seagate FireCuda 530 1TB NVMe SSD – LKR 50,000</option>
+                <option data-price="70000">Kingston KC3000 2TB NVMe SSD – LKR 70,000</option>
+                <option data-price="55000">Samsung 870 EVO 2TB SATA SSD – LKR 55,000</option>
+              </select>
+
+            <div class="quantity-control">
+                <button id="decrease">-</button>
+                <span id="quantity">1</span>
+                <button id="increase">+</button>
+            </div>
+
+            <button id="addToCart">Add to cart</button>
+        </section>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price Per Item</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td id="total-price">LKR 0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <div class="actions">
+           <button id="buyNow">Buy Now</button>
+            <button id="addToFavorites">Add to Favorites</button>
+            <button id="applyFavorites">Apply Favorites</button>
+        </div>
+    </main>
+
+    <script src="./script/order.js"></script>
+    <footer>
+        <p>&copy; 2025 Gaming World | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
